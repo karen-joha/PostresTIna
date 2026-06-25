@@ -1,8 +1,23 @@
-import { Injectable, computed, signal } from '@angular/core';
+import { Injectable, computed, signal, effect } from '@angular/core';
 import { CartItem, Product, ProductSize } from './products';
 
 @Injectable({ providedIn: 'root' })
 export class CartService {
+  private readonly STORAGE_KEY = 'cart-items';
+  constructor() {
+    const savedItems = localStorage.getItem(this.STORAGE_KEY);
+
+    if (savedItems) {
+      this.items.set(JSON.parse(savedItems));
+    }
+
+    effect(() => {
+      localStorage.setItem(
+        this.STORAGE_KEY,
+        JSON.stringify(this.items())
+      );
+    });
+  }
   readonly items = signal<CartItem[]>([]);
   readonly isOpen = signal(false);
 
@@ -46,7 +61,7 @@ export class CartService {
     this.openCart();
   }
 
-  
+
   increment(id: string): void {
     this.items.update((items) =>
       items.map((i) => (i.id === id ? { ...i, quantity: i.quantity + 1 } : i)),
