@@ -1,6 +1,7 @@
 export interface ProductSize {
   name: string;
   price: number;
+  image?: string;
 }
 
 export interface Product {
@@ -31,11 +32,19 @@ export const PRODUCTS: Product[] = [
     id: 'brazo-reina-fresa',
     name: 'Brazo de Reina de Fresa',
     description: 'Suave brazo de reina relleno con crema y fresa.',
-    image: '/postres/brazo-reina-fresa.png',
+    image: '/postres/brazo-reina-fresa-grande.jpg',
     category: 'Tortas y Pasteles',
     sizes: [
-      { name: 'Pequeño', price: 30 },
-      { name: 'Grande', price: 60 },
+      {
+        name: 'Pequeña',
+        price: 30,
+        image: '/postres/brazo-reina-fresa.jpg'
+      },
+      {
+        name: 'Grande',
+        price: 60,
+        image: '/postres/brazo-reina-fresa-grande.jpg'
+      },
     ],
   },
 
@@ -43,11 +52,19 @@ export const PRODUCTS: Product[] = [
     id: 'pionono-durazno',
     name: 'Pionono de Durazno',
     description: 'Brazo de reina relleno con crema y duraznos.',
-    image: '/postres/brazo-reina-durazno.png',
+    image: '/postres/brazo-reina-durazno-grande.jpg',
     category: 'Tortas y Pasteles',
     sizes: [
-      { name: 'Pequeño', price: 30 },
-      { name: 'Grande', price: 60 },
+      {
+        name: 'Pequeñ0',
+        price: 30,
+        image: '/postres/brazo-reina-durazno.jpg'
+      },
+      {
+        name: 'Grande',
+        price: 60,
+        image: '/postres/brazo-reina-durazno-grande.jpg'
+      },
     ],
   },
 
@@ -55,7 +72,7 @@ export const PRODUCTS: Product[] = [
     id: 'nino-envuelto-nutella',
     name: 'Niño Envuelto de Nutella',
     description: 'Brazo de reina con relleno cremoso de Nutella.',
-    image: '/postres/brazo-reina-nutella.png',
+    image: '/postres/brazo-reina-nutella.jpg',
     category: 'Tortas y Pasteles',
     badge: 'Favorito',
     sizes: [
@@ -67,7 +84,7 @@ export const PRODUCTS: Product[] = [
     id: 'cheesecake-maracuya',
     name: 'Cheesecake de Maracuyá',
     description: 'Cheesecake cremoso con cobertura de maracuyá.',
-    image: '/postres/cheesecake-maracuya.png',
+    image: '/postres/cheesecake-maracuya.jpg',
     category: 'Tortas y Pasteles',
     sizes: [
       { name: 'Único', price: 50 },
@@ -78,11 +95,19 @@ export const PRODUCTS: Product[] = [
     id: 'milhoja',
     name: 'Milhoja',
     description: 'Capas crujientes de hojaldre con relleno dulce.',
-    image: '/postres/milhoja.png',
+    image: '/postres/milhoja-grande.jpg',
     category: 'Tortas y Pasteles',
     sizes: [
-      { name: 'Porción', price: 7 },
-      { name: 'Grande', price: 40 },
+      {
+        name: 'Porción',
+        price: 7,
+        image: '/postres/milhoja.jpg'
+      },
+      {
+        name: 'Grande',
+        price: 40,
+        image: '/postres/milhoja-grande.jpg'
+      },
     ],
   },
 
@@ -90,7 +115,7 @@ export const PRODUCTS: Product[] = [
     id: 'fresas-con-crema',
     name: 'Fresas con Crema',
     description: 'Fresas frescas acompañadas de una deliciosa crema.',
-    image: '/postres/fresas-con-crema.png',
+    image: '/postres/fresas-con-crema.jpg',
     category: 'Cremosos',
     badge: 'Más vendido',
     sizes: [
@@ -103,7 +128,7 @@ export const PRODUCTS: Product[] = [
     name: 'Cuchareable de Brazo de Reina',
     description:
       'Cuchareable de brazo de reina relleno con fresas frescas y deliciosa crema.',
-    image: '/postres/fresas-con-crema.png',
+    image: '/postres/fresas-con-crema-grande.jpg',
     category: 'Cremosos',
     sizes: [
       { name: 'Único', price: 8 },
@@ -114,11 +139,19 @@ export const PRODUCTS: Product[] = [
     id: 'leche-asada',
     name: 'Leche Asada',
     description: 'Postre tradicional horneado con textura suave y cremosa.',
-    image: '/postres/leche-asada.png',
+    image: '/postres/leche-asada-grande.jpg',
     category: 'Cremosos',
     sizes: [
-      { name: 'Pequeña', price: 6 },
-      { name: 'Grande', price: 40 },
+      {
+        name: 'Pequeña',
+        price: 6,
+        image: '/postres/leche-asada.jpg'
+      },
+      {
+        name: 'Grande',
+        price: 40,
+        image: '/postres/leche-asada-grande.jpg'
+      },
     ],
   },
 
@@ -126,7 +159,7 @@ export const PRODUCTS: Product[] = [
     id: 'alpinito',
     name: 'Alpinito',
     description: 'Postre cremoso inspirado en el clásico sabor de la infancia.',
-    image: '/postres/alpinito.png',
+    image: '/postres/alpinito.jpg',
     category: 'Cremosos',
     sizes: [
       { name: 'Único', price: 5 },
@@ -137,11 +170,19 @@ export const PRODUCTS: Product[] = [
     id: 'gelatina-mosaico',
     name: 'Gelatina Mosaico',
     description: 'Colorida combinación de gelatinas en base cremosa.',
-    image: '/postres/gelatina-mosaico.png',
+    image: '/postres/gelatina-mosaico-grande.jpg',
     category: 'Gelatinas',
     sizes: [
-      { name: 'Pequeña', price: 6 },
-      { name: 'Grande', price: 30 },
+      {
+        name: 'Pequeña',
+        price: 6,
+        image: '/postres/gelatina-mosaico.jpg'
+      },
+      {
+        name: 'Grande',
+        price: 30,
+        image: '/postres/gelatina-mosaico-grande.jpg'
+      },
     ],
   },
 
@@ -149,11 +190,19 @@ export const PRODUCTS: Product[] = [
     id: 'gelatina-mixtiada',
     name: 'Gelatina Mixtiada',
     description: 'Deliciosa mezcla de sabores y texturas en gelatina.',
-    image: '/postres/gelatina-mixtiada.png',
+    image: '/postres/gelatina-mosaico.jpg',
     category: 'Gelatinas',
     sizes: [
-      { name: 'Pequeña', price: 6 },
-      { name: 'Grande', price: 30 },
+      {
+        name: 'Pequeña',
+        price: 6,
+        image: '/postres/gelatina-mosaico.jpg'
+      },
+      {
+        name: 'Grande',
+        price: 30,
+        image: '/postres/gelatina-mosaico-grande.jpg'
+      },
     ],
   },
 ];

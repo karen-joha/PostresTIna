@@ -49,7 +49,7 @@ export class CartService {
           id: itemId,
           name: product.name,
           description: product.description,
-          image: product.image,
+          image: size.image || product.image,
           category: product.category,
           quantity: 1,
           size: size.name,

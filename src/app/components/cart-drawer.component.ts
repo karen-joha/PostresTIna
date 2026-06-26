@@ -98,9 +98,7 @@ import { WHATSAPP_NUMBER, formatPrice } from '../products';
                 />
                 <div class="flex flex-1 flex-col">
                   <div class="flex items-start justify-between gap-2">
-                    <h3 class="font-semibold leading-tight text-card-foreground">
-                      {{ item.name }}
-                    </h3>
+                    <h3>{{ item.name }} <span class="item-size">({{ item.size }})</span></h3>
                     <button
                       type="button"
                       (click)="cart.removeItem(item.id)"
