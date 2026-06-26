@@ -203,6 +203,7 @@ import { WHATSAPP_NUMBER, formatPrice } from '../products';
           <a
             [href]="whatsappLink()"
             target="_blank"
+            (click)="clearCartStorage()"
             rel="noopener noreferrer"
             class="flex w-full items-center justify-center gap-2 rounded-full px-6 py-3.5 text-base font-bold text-white shadow-md transition-transform hover:scale-[1.02] active:scale-95"
             style="background-color:#25D366"
@@ -231,7 +232,9 @@ import { WHATSAPP_NUMBER, formatPrice } from '../products';
 export class CartDrawerComponent {
   protected readonly cart = inject(CartService);
   protected readonly formatPrice = formatPrice;
-
+  protected clearCartStorage(): void {
+    this.cart.clear();
+  }
   protected readonly whatsappLink = computed(() => {
     const items = this.cart.items();
     const lines = items.map(

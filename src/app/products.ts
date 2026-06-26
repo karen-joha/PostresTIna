@@ -56,7 +56,7 @@ export const PRODUCTS: Product[] = [
     category: 'Tortas y Pasteles',
     sizes: [
       {
-        name: 'Pequeñ0',
+        name: 'Pequeño',
         price: 30,
         image: '/postres/brazo-reina-durazno.jpg'
       },
