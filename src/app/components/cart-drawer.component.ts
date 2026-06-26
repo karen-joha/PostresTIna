@@ -242,7 +242,7 @@ export class CartDrawerComponent {
         `• ${item.quantity}x ${item.name} — ${formatPrice(item.price * item.quantity)}`,
     );
     const message = [
-      '¡Hola Postrestina! 🍰 Quiero hacer este pedido:',
+      '¡Hola Postrestina! Quiero hacer este pedido:',
       '',
       ...lines,
       '',
