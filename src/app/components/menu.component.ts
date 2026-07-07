@@ -17,10 +17,10 @@ import {
         <h2
           class="text-balance font-serif text-3xl font-black text-foreground sm:text-4xl"
         >
-          Nuestro menú dulce
+          Our dessert menu
         </h2>
         <p class="mt-2 text-muted-foreground">
-          Elige tus antojos favoritos y agrégalos al carrito.
+          Choose your favorite cravings and add them to the cart.
         </p>
       </div>
 
@@ -107,7 +107,7 @@ import {
                     <path d="M5 12h14" />
                     <path d="M12 5v14" />
                   </svg>
-                  Agregar
+                  Add
                 </button>
               </div>
             </div>
@@ -161,11 +161,11 @@ export class MenuComponent {
   protected readonly cart = inject(CartService);
   protected readonly categories = CATEGORIES;
   protected readonly formatPrice = formatPrice;
-  protected readonly activeCategory = signal('Todos');
+  protected readonly activeCategory = signal('All');
   protected readonly selectedProduct = signal<Product | null>(null);
   protected readonly filteredProducts = computed(() => {
     const cat = this.activeCategory();
-    if (cat === 'Todos') return PRODUCTS;
+    if (cat === 'All') return PRODUCTS;
     return PRODUCTS.filter((p) => p.category === cat);
   });
   protected addProduct(product: Product): void {

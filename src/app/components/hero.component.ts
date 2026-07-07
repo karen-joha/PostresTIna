@@ -15,13 +15,12 @@ import { Component } from '@angular/core';
           <h1
             class="text-balance font-cursive text-2xl font-black leading-tight text-foreground sm:text-5xl lg:text-6xl"
           >
-            <strong class="text-primary">Endulza</strong> tus mejores momentos
+            <strong class="text-primary">Sweeten</strong> your best moments.
           </h1>
           <p
             class="text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg"
           >
-            Pasteles, cupcakes y delicias artesanales horneadas con ingredientes
-            frescos. Elige tus favoritos y pide en segundos por WhatsApp.
+            Cakes, cupcakes, and artisanal treats baked with fresh ingredients. Choose your favorites and order in seconds via WhatsApp.
           </p>
           <div
             class="flex flex-col items-center gap-3 sm:flex-row md:justify-start"
@@ -30,7 +29,7 @@ import { Component } from '@angular/core';
               href="#menu"
               class="w-full rounded-full bg-primary px-7 py-3.5 text-center text-base font-bold text-primary-foreground shadow-md transition-transform hover:scale-105 active:scale-95 sm:w-auto"
             >
-              Ver el menú
+              View the menu
             </a>
             
           </div>
@@ -51,4 +50,4 @@ import { Component } from '@angular/core';
     </section>
   `,
 })
-export class HeroComponent {}
+export class HeroComponent { }

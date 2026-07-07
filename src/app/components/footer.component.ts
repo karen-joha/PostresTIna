@@ -14,28 +14,28 @@ import { Component } from '@angular/core';
         <div class="flex flex-col items-center gap-2 text-center">
           <span class="text-3xl" aria-hidden="true">🚚</span>
           <h3 class="font-serif text-lg font-bold text-foreground">
-            Entrega a domicilio
+            Home delivery
           </h3>
           <p class="text-sm text-muted-foreground">
-            Llevamos tus postres frescos hasta tu puerta.
+            We deliver fresh desserts to your door.
           </p>
         </div>
         <div class="flex flex-col items-center gap-2 text-center">
           <span class="text-3xl" aria-hidden="true">🎂</span>
           <h3 class="font-serif text-lg font-bold text-foreground">
-            Pedidos personalizados
+            Custom orders
           </h3>
           <p class="text-sm text-muted-foreground">
-            Diseñamos el pastel perfecto para tu ocasión especial.
+            We design the perfect cake for your special occasion.
           </p>
         </div>
         <div class="flex flex-col items-center gap-2 text-center">
           <span class="text-3xl" aria-hidden="true">🌿</span>
           <h3 class="font-serif text-lg font-bold text-foreground">
-            Ingredientes frescos
+            Fresh ingredients
           </h3>
           <p class="text-sm text-muted-foreground">
-            Solo usamos ingredientes naturales y de calidad.
+            We use only natural, high-quality ingredients.
           </p>
         </div>
       </div>
@@ -57,8 +57,8 @@ import { Component } from '@angular/core';
           </span>
         </div>
         <p class="max-w-md text-sm text-muted-foreground">
-          Pastelería artesanal hecha con amor. Haz tu pedido por WhatsApp y
-          recibe tus postres favoritos.
+          Artisanal pastries made with love. Place your order via WhatsApp and
+          receive your favorite desserts.
         </p>
         <a
           href="https://wa.me/17252899207"
@@ -69,7 +69,7 @@ import { Component } from '@angular/core';
           +1 (725) 289-9207
         </a>
         <p class="mt-4 text-xs text-muted-foreground">
-          © {{ year }} Postrestina. Todos los derechos reservados.
+          © {{ year }} Postrestina. All rights reserved.
         </p>
       </div>
     </footer>

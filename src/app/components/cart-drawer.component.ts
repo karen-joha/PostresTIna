@@ -29,7 +29,7 @@ import { WHATSAPP_NUMBER, formatPrice } from '../products';
         <h2
           class="flex items-center gap-2 font-serif text-xl font-bold text-foreground"
         >
-          Tu pedido
+          Your order
           @if (cart.totalItems() > 0) {
             <span class="text-base font-medium text-muted-foreground"
               >({{ cart.totalItems() }})</span
@@ -71,17 +71,17 @@ import { WHATSAPP_NUMBER, formatPrice } from '../products';
             🛍️
           </span>
           <p class="font-serif text-lg font-bold text-foreground">
-            Tu carrito está vacío
+            Your cart is empty.
           </p>
           <p class="text-sm text-muted-foreground">
-            Agrega algunos postres deliciosos para empezar.
+            Add some delicious desserts to start.
           </p>
           <button
             type="button"
             (click)="cart.closeCart()"
             class="mt-2 rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
           >
-            Ver menú
+            View menú
           </button>
         </div>
       } @else {
@@ -189,7 +189,7 @@ import { WHATSAPP_NUMBER, formatPrice } from '../products';
             (click)="cart.clear()"
             class="mt-4 text-sm font-medium text-muted-foreground underline-offset-4 transition-colors hover:text-destructive hover:underline"
           >
-            Vaciar carrito
+            Empty cart
           </button>
         </div>
 
@@ -222,7 +222,7 @@ import { WHATSAPP_NUMBER, formatPrice } from '../products';
             Pedir por WhatsApp
           </a>
           <p class="mt-2 text-center text-xs text-muted-foreground">
-            Te redirige a WhatsApp con tu pedido listo para enviar.
+            It redirects you to WhatsApp with your order ready to send.
           </p>
         </footer>
       }

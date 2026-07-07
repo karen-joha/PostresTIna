@@ -31,12 +31,12 @@ import { CartService } from '../cart.service';
           <a
             href="#nosotros"
             class="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
-            >Nosotros</a
+            >Us</a
           >
           <a
             href="#contacto"
             class="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
-            >Contacto</a
+            >Contact</a
           >
         </nav>
 
@@ -64,7 +64,7 @@ import { CartService } from '../cart.service';
               d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
             />
           </svg>
-          <span class="hidden sm:inline">Carrito</span>
+          <span class="hidden sm:inline">Cart</span>
           @if (cart.totalItems() > 0) {
             <span
               class="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground"
