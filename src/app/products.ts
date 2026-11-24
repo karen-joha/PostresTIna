@@ -25,7 +25,7 @@ export interface CartItem {
   price: number;
 }
 
-export const WHATSAPP_NUMBER = '17252899207'; // +1 (725) 289-9207
+export const WHATSAPP_NUMBER = '1728600836'; // +1 (702) 860-0836
 
 export const PRODUCTS: Product[] = [
   {

@@ -66,7 +66,7 @@ import { Component } from '@angular/core';
           rel="noopener noreferrer"
           class="font-semibold text-primary hover:underline"
         >
-          +1 (725) 289-9207
+          +1 (702) 860-0836
         </a>
         <p class="mt-4 text-xs text-muted-foreground">
           © {{ year }} Postrestina. All rights reserved.
